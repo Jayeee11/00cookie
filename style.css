@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'CookieRun';
+  src: url('CookieRun-Bold.eot');
+  src: url('CookieRun-Bold.eot?#iefix') format('embedded-opentype'),
+      url('CookieRun-Bold.woff2') format('woff2'),
+      url('CookieRun-Bold.woff') format('woff'),
+      url('CookieRun-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  font-family: 'CookieRun';
+}
+
+*{
+    margin:0; padding:0;
+    font-size:24px; 
+    line-height:1.3;
+  }
+  ul{list-style:none;}
+  .tabCon.out-tabCon{
+    min-height: 400px;
+  }
+  .tabmenu{ 
+    max-width:600px; 
+    margin: 0 ; 
+    position:relative; 
+  }
+  .tabmenu ul{
+    position: static;
+  }
+  .tabmenu ul li{
+    display:  inline-block;
+    width:33.33%; 
+    float:left;  
+    text-align:center; 
+    background :#f9f9f9;
+    line-height:40px;
+  }
+  .tabmenu label{
+    display:block;
+    width:100%; 
+    height:40px;
+    line-height:40px;
+  }
+  .tabmenu input{display:none;}
+  .tabCon{
+    display:none; 
+    width: 600px;
+    text-align:left; 
+    padding: 20px 20px 20px 20px;
+    position:absolute; 
+    box-sizing: border-box; 
+    border : 0px solid #f9f9f9;
+  }
+  .tabmenu input:checked ~ label{
+    background: #ddd;
+  }
+  .tabmenu input:checked ~ .tabCon{
+    display:block; 
+  }
+  
+  .out-tabCon1 {
+    background: #081536}
+    
+    
