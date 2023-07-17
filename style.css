@@ -13,13 +13,6 @@ body{
   font-family: 'CookieRun';
 }
 
-.body {
-	cursor: url('brave1.cur'), auto !important;
-    }
-
-.button{
-	cursor: url('brave2.cur'), auto !important;
-    }
 	
 
 *{
