@@ -13,7 +13,7 @@ body{
   font-family: 'CookieRun';
 }
 
-.link:hover { curosr : url(brave1.cur), auto; }
+* {cursor: url(brave1.cur)2, auto;}
 
 *{
     margin:0; padding:0;
