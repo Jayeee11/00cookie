@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6 user-scalable=no, maximum-scale=0.6, minimum-scale=0.6." >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>짱하나</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <meta property="og:title" content="쿠키런 조합표" />
@@ -238,19 +238,19 @@
                       </a></li>
                       <li><a href="#sub_tab02">
                         <p>
-                          <span>길드요리</span >
+                          <span>랜덤챌린지</span >
                         </p>
                       </a></li>
                       
                       <li><a href="#sub_tab03">
                         <p>
-                          <span>젤리점수</span>
+                          <span>길드요리</span>
                         </p>
                       </a></li>
                       
                       <li><a href="#sub_tab04">
                         <p>
-                          <span></span>
+                          <span>젤리점수</span>
                         </p>
                       </a></li>
                       <li><a href="#sub_tab05">
@@ -263,15 +263,18 @@
                     <!--tab 내용-->
                     <div class="sub_tab_container">
                       <div class="content" id="sub_tab01">
+                        <div>
+                          내용1
+                        </div>
                       </div>
                       <div class="content" id="sub_tab02">
                         <div>
-                          <img src="요리도감.jpg"style="width:600px; margin-top:-65px;"/ alt="">
+                          내용02
                         </div>
                       </div>
                       <div class="content" id="sub_tab03">
                         <div>
-                          내용03 내용03 내용03 내용03 내용03 내용03
+                          <img src="요리도감.jpg"style="width:600px; margin-top:-65px;"/ alt="">
                         </div>
                       </div>
                       <div class="content" id="sub_tab04">
@@ -291,6 +294,8 @@
             </li>
         </ul>
     </main>
+
+    
     <script>
       $(document).ready(function(){
         $('.sub_tab_btn li').click(function(){
@@ -302,7 +307,7 @@
         });
       });
 
-        $(document).ready(function () {
+      $(document).ready(function () {
     $(".tab_menu li").click(function () {
         var $this = $(this),
             tabId = $this.data("tab"),
