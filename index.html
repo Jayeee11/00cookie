@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>짱하나</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <meta property="og:title" content="쿠키런 조합표" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://i.imgur.com/uA9WyGL.jpg" />
@@ -290,9 +291,6 @@
             </li>
         </ul>
     </main>
-
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="manifest.json"></script>
     <script>
       $(document).ready(function(){
         $('.sub_tab_btn li').click(function(){
@@ -303,6 +301,28 @@
           return false;
         });
       });
+
+        $(document).ready(function () {
+    $(".tab_menu li").click(function () {
+        var $this = $(this),
+            tabId = $this.data("tab"),
+            tabIndex = $this.index();
+
+        $(".tab_menu li, .tab_content li").removeClass("on");
+
+        $this.addClass("on");
+        $("#"+tabId).addClass("on");
+
+        $(".tab_menu li").each(function (content) {
+            $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_off","_on"));
+            
+            if (tabIndex != content) {
+                $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_on","_off"));
+            }
+        });
+    });
+})
+
       </script>
 </body>
 </html>
