@@ -178,9 +178,12 @@
             </li>
             <li id="tab-2">
               <div data-tab="tab-2" class="on"><img src="챔스.jpg"style="width:600px; margin:0px;"/ alt="">
-              <button class="btn13" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/IiFzmasDUjI?si=bZqoKIWelmdKoZOY'">arena1</button>
-              <button class="btn14" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/dKmquqNO4Hs?si=FZpfvbAnoDRRyiBH'">arena2</button>
-              <button class="btn15" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/UDirGe8JTGA?si=h3rRs2eJrSqY7tvJ'">arena3</button>
+              <button class="btn13" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/yLnCofADw9A'">arena1</button>
+              <button class="btn14" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/FZsReE59vK4'">arena2</button>
+              <button class="btn15" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/wfAUeetE9cA'">arena3</button>
+    </div>
+
+              
             </div>
             <style>
               button.btn13 {
@@ -218,7 +221,7 @@
               </div>
             </li>
             <li id="tab-4">
-              <div data-tab="tab-4" class="on"><img src="재판정.jpg"style="width:600px; margin:0px;"/ alt="">
+              <div data-tab="tab-4" class="on"><img src="챔스.jpg"style="width:600px; margin:0px;"/ alt="">
               </div>
             </li>
             <li id="tab-5">
@@ -259,9 +262,6 @@
                     <!--tab 내용-->
                     <div class="sub_tab_container">
                       <div class="content" id="sub_tab01">
-                        <div>
-                          내용01 내용01 내용01 내용01 내용01 내용01
-                        </div>
                       </div>
                       <div class="content" id="sub_tab02">
                         <div>
@@ -280,7 +280,7 @@
                       </div>
                       <div class="content" id="sub_tab05">
                         <div>
-                          내용05
+                          내용01 내용01 내용01 내용01 내용01 내용01
                         </div>
                       </div>
                     </div>
@@ -303,86 +303,6 @@
           return false;
         });
       });
-       $(document).ready(function () {
-    $(".tab_menu li").click(function () {
-        var $this = $(this),
-            tabId = $this.data("tab"),
-            tabIndex = $this.index();
-
-        $(".tab_menu li, .tab_content li").removeClass("on");
-
-        $this.addClass("on");
-        $("#"+tabId).addClass("on");
-
-        $(".tab_menu li").each(function (content) {
-            $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_off","_on"));
-            
-            if (tabIndex != content) {
-                $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_on","_off"));
-            }
-        });
-    });
-}) 
       </script>
 </body>
-    <style>
-        @charset "uth-8";
-
-*{margin:0;padding:0}
-ul,li{list-style:none}
-
-.container{margin-top:0px;text-align:center}
-
-/* 탭메뉴 공통 */
-.tab_menu, .tab_content{width:600px;margin:px auto 0}
-.tab_menu li, .tab_content li{border:0px solid #000}
-
-/* 탭메뉴 버튼 */
-.tab_menu {display:table;table-layout:fixed;}
-.tab_menu li{display:table-cell;padding:10px 0;cursor:pointer} text
-.tab_menu li img{vertical-align:middle}
-.tab_menu li.on{background:#000000;text-align:center}
-.tab_menu li.on span {color: #ffffff};text-align:center
-.tab_menu li+li{border-left:none}
-.tab_menu li span{font-size: 17px; font-weight:600px; color: #000000; display: inline-block; padding-right: 0px}
-
-
-/* 탭메뉴 컨텐츠 */
-.tab_content li{display:none;}
-.tab_content li.on{display:block}
-
-/*sub탭메뉴 디자인*/
-.wrap{width: 600px; height: 40px; margin: 0px;  background: #ffffff ;position: relative;z-index: 10;}
-.sub_tab_btn{font-size: 0}
-.sub_tab_btn > li{border-radius: 15px;display: inline-block; width: 100px; height: 40px;background:#eee7e7; line-height: 0px; text-align: center ;margin: 9px;margin-top: 10px;position: relative;z-index: 10;}
-.sub_tab_btn > li:last-child{margin-right: 0}
-.sub_tab_btn p{font-size: 16px;padding-top : 20px ;font-weight: bold; color: #000000;position: relative;z-index: 10;}
-.sub_tab_btn span{font-size: 16px; font-weight:500px; color: #000000; display: inline-block; padding-right: 0px ;position: relative;z-index: 10;}
-
-/*내용*/
-.sub_tab_container{width: 100%; height: 850px;position: relative;z-index: 0;}
-.sub_tab_container > div{width: 100%; height: 850px; background:#ffffff; padding: 0px; color: #000;position: relative;z-index: 0;}
-
-/*sub_tab버튼 클릭했을 때*/
-.sub_tab_btn > li.active{background: #f7ffdb; position: relative;z-index: 10;}
-.sub_tab_btn > li.active p{font-size: 16px; font-weight: bold; color: #000000}
-.sub_tab_btn > li.active span{color: #000000}
-.sub_tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
-@font-face {
-  font-family: 'CookieRun';
-  font-weight: 400;
-  font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
-  font-display: swap;
-} 
-body{
-font-family: 'CookieRun';
-}
-
-.#countdown {font-size: 20px; font-weight:800px; color: #000000;}
-    </style>
 </html>
