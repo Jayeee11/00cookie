@@ -42,32 +42,3 @@ ul,li{list-style:none}
 .sub_tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
 
 
-@font-face {
-  font-family: 'CookieRun';
-  font-weight: 400;
-  font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.otf') format('embedded-opentype');
-  font-display: swap;
-} 
-
-@font-face {
-  font-family: 'CookieRun';
-  font-weight: 600;
-  font-style: bold;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.eot?#iefix') format('embedded-opentype');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.woff2') format('woff2');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.woff') format('woff');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.ttf') format("truetype");
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunbold.otf') format('embedded-opentype');
-  font-display: swap;
-} 
-
-body{
-font-family: 'CookieRun';
-}
