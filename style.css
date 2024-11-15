@@ -1,21 +1,5 @@
 @charset "uth-8";
 
-@font-face {
-  font-family: 'CookieRun';
-  font-weight: 400;
-  font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.otf') format('embedded-opentype');
-  font-display: swap;
-} 
-body{
-font-family: 'CookieRun';
-}
-
 *{margin:0;padding:0}
 ul,li{list-style:none}
 
@@ -32,7 +16,7 @@ ul,li{list-style:none}
 .tab_menu li.on{background:#000000;text-align:center}
 .tab_menu li.on span {color: #ffffff};text-align:center
 .tab_menu li+li{border-left:none}
-.tab_menu li span{font-size: 17px; font-weight:600px; color: #000000; display: inline-block; padding-right: 0px}
+.tab_menu li span{font-size: 17px;; color: #000000; display: inline-block; padding-right: 0px}
 
 
 /* 탭메뉴 컨텐츠 */
@@ -44,8 +28,8 @@ ul,li{list-style:none}
 .sub_tab_btn{font-size: 0}
 .sub_tab_btn > li{border-radius: 15px;display: inline-block; width: 100px; height: 40px;background:#eee7e7; line-height: 0px; text-align: center ;margin: 9px;margin-top: 10px;position: relative;z-index: 10;}
 .sub_tab_btn > li:last-child{margin-right: 0}
-.sub_tab_btn p{font-size: 16px;padding-top : 20px ;font-weight: bold; color: #000000;position: relative;z-index: 10;}
-.sub_tab_btn span{font-size: 16px; font-weight:500px; color: #000000; display: inline-block; padding-right: 0px ;position: relative;z-index: 10;}
+.sub_tab_btn p{font-size: 16px;padding-top : 20px ; color: #000000;position: relative;z-index: 10;}
+.sub_tab_btn span{font-size: 16px; color: #000000; display: inline-block; padding-right: 0px ;position: relative;z-index: 10;}
 
 /*내용*/
 .sub_tab_container{width: 100%; height: 850px;position: relative;z-index: 0;}
@@ -53,8 +37,25 @@ ul,li{list-style:none}
 
 /*sub_tab버튼 클릭했을 때*/
 .sub_tab_btn > li.active{background: #f7ffdb; position: relative;z-index: 10;}
-.sub_tab_btn > li.active p{font-size: 16px; font-weight: bold; color: #000000}
+.sub_tab_btn > li.active p{font-size: 16px; color: #000000}
 .sub_tab_btn > li.active span{color: #000000}
 .sub_tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
+
+
+@font-face {
+  font-family: 'CookieRun';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.otf') format('embedded-opentype');
+  font-display: swap;
+} 
+body{
+font-family: 'CookieRun';
+}
 
 
